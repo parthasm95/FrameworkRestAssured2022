@@ -24,7 +24,7 @@ public class GetUserTest {
 		Response response = RestClient.doGet("JSON", baseURI, basePath, authTokenMap, null, true);
 		System.out.println(response.getStatusCode());
 		System.out.println(response.prettyPrint());
-		Assert.assertEquals(response.getStatusCode(), 300);
+		Assert.assertEquals(response.getStatusCode(), 200);
 	}
 	
 	@Test(priority=2)
